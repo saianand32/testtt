@@ -1,0 +1,33 @@
+#about{
+    width:100vw;
+    height:100vh;
+    display: flex;
+}
+.how_to_use {
+    width: 50vw;
+    min-height: 60vh;
+    text-align: center;
+    vertical-align: middle;
+    margin: 30vh 40vh 50vh 50vh;
+    border-radius: 50px;
+    position: relative;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+    block-size: fit-content;
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+.how_to_use::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px;
+    padding: 3px;
+    background: linear-gradient(90deg, rgba(87, 123, 221, 1) 0%, rgba(252, 125, 33, 1) 46%, rgba(252, 125, 33, 1) 60%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
