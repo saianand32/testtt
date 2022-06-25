@@ -27,9 +27,9 @@ app.use(express.json());
 
 
 app.use("/api/routes", routes);
-app.use(express.static(path.join(__dirname, './frontend/build')))
+app.use(express.static(path.join(__dirname, "client", "build")))
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, './frontend/build/index.html'))
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"))
 })
 app.listen(8000, () => {
   console.log(`Server Started at ${8000}`);
